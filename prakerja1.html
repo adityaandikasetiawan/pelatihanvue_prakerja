@@ -20,6 +20,7 @@
     .item{
         width: 30%;
         height: 200px;
+        margin-bottom: 20px;
     }
     #red{
         background-color: red;
@@ -41,22 +42,22 @@
     }
     
     /* ukuran device kecil (phone, 600px ke bawah) */
-    @media screen and (max-width: 599px) {    
+    @media screen and (max-width: 600px) {    
         .item{
-            width: 25%;
+            width: 100%;
         }   
     }
     /* ukuran device sedang (tablet device, large phone, 600px keatas)  */
-    @media only screen and (max-width: 960px) {        
+    @media only screen and (min-width: 600px) {        
     .item{
-        width: 30%;
+        width: 45%;
     }
     }
     /* ukuran device besar (laptop/pc, 960px ke atas ) */
     @media only screen and (min-width: 960px) {        
-        /* .item{
-            width: 100;
-        } */
+        .item{
+            width: 30%;
+        }
     }    
 </style>
 
