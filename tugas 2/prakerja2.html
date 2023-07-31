@@ -1,1 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List Latihan 2 Prakerja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="text">
+                <ol> 
+                    <li v-for="list in lists">
+                        {{ list }}
+                    </li>
+                </ol>
+            </div>
+
+            <div class="form">
+                <input type="text" v-model:value="todo" placeholder="Masukan Inputan">
+                <button @click="saveTodo">Tambahkan</button>
+            </div>
+            <span v-if="lists.length >= 4">Hebat!!!</span>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0/dist/vue.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
